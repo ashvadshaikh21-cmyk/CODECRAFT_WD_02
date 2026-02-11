@@ -1,0 +1,97 @@
+:root {
+    --bg-gradient: linear-gradient(135deg, #001524, #15616d);
+    --text-color: #ffffff;
+    --card-bg: rgba(109, 236, 212, 0.1);
+    --button-bg: #ffffff;
+    --button-text: #333;
+}
+
+body.light {
+    --bg-gradient: linear-gradient(135deg, #faf3dd, #ffa69e);
+    --text-color: #222;
+    --card-bg: rgba(255,255,255,0.6);
+    --button-bg: #222;
+    --button-text: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: 0.4s ease;
+}
+
+.container {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#display {
+    font-size: 3rem;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    background: var(--button-bg);
+    color: var(--button-text);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+li {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.toggle {
+    margin-top: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    #display {
+        font-size: 2.2rem;
+    }
+}
