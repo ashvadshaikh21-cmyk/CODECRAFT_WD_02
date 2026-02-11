@@ -10,6 +10,12 @@ An interactive stopwatch web application built using HTML, CSS, and JavaScript. 
 
 
 
+Live Demo:
+
+https://ashvadshaikh21-cmyk.github.io/CODECRAFT\_WD\_02/
+
+
+
 Features
 
 \- Start, Pause, Reset functionality
