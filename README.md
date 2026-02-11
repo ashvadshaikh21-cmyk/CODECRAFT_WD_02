@@ -38,5 +38,5 @@ Technologies Used
 
  How to Run
 
-Open index.html in any modern browser.
+Open stopwatch.html in any modern browser.
 
